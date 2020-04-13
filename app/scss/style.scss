@@ -248,6 +248,7 @@
    padding: 110px 0 120px;
    .slick-dots {
       text-align: center;
+      margin-top: 50px;
       li{
          display: inline-block;
          margin-left: 3px;
@@ -270,3 +271,64 @@
       }
    }
 }
+
+// END PRODUCT-SLIDER
+
+// START ALVANTAGES
+
+.advantages {
+   background-color: $bg;
+   padding: 110px 0; 
+}
+
+.advantages__title {
+   color: #fff;
+   margin-bottom: 40px;
+}
+
+.advantages__inner {
+   display: flex;
+   justify-content: space-between;
+}
+
+.advantages__item {
+   max-width: 370px;
+   text-align: center;
+   padding: 0 15px;
+   &:hover {
+      .advantages__item-images {
+         background-color: $green;
+      }
+      .advantages__item-title {
+         background-color: $green;
+      }
+      .advantages__item-images {
+         g{
+            fill: #fff;
+         }
+      }
+   }
+   &-images {
+      width: 114px;
+      height: 114px;
+      background-color: #fff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      transition: all 1s;
+   }
+   &-title {
+      color: #fff;
+      margin-bottom: 25px;
+      font-weight: 500;
+      font-size: 24px;
+      transition: all 1s;
+   }
+   &-text {
+      font-size: 15px;
+   }
+}
+// START ALVANTAGES
