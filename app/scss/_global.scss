@@ -29,6 +29,14 @@ body {
    color: $text;
 }
 
+.content {
+	min-height: calc(100vh - 80px);
+}
+
+.page-content {
+   background-color: $grey;
+}
+
 .container {
    max-width: 1200px;
    margin: 0 auto;
@@ -59,4 +67,34 @@ body {
 .rate-star {
    display: inline-block;
    margin-right: 13px;
+}
+
+.breadcrumbs {
+   &__inner {
+      padding: 45px 0 40px;
+   }
+   &__list {
+      li {
+         display: inline-block;
+         position: relative;
+         & + li {
+            padding-left: 24px;
+            &::before {
+               content: '-';
+               position: absolute;
+               left: 8px;
+               color: $green;
+            }
+         }
+         &:last-child{
+            a,
+            span {
+               color: $bg;
+            }
+         }
+      }
+      a {
+      color: #b0bec5;
+      }
+   }
 }
